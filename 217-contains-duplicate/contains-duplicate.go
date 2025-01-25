@@ -10,17 +10,7 @@ func containsDuplicate(nums []int) bool {
     for i:=0;i<len(nums);i++{
         // fmt.Println(nums[i])
         numMaps[nums[i]]   = numMaps[nums[i]] +1
-        // if numMaps[n] >1{
-        //     ch = true
-        // }else{
-        //     ch = false
-        // }
-    }
-
-    for i,v :=range numMaps{
-        fmt.Println(i," ",v)
-        
-        if v >1{
+        if numMaps[nums[i]] >1{
             return true 
         }
     }
