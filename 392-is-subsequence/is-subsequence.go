@@ -9,9 +9,8 @@ func isSubsequence(s string, t string) bool {
                 R++
                 j++
                 break
-            }else{
-                j++
             }
+                j++
         }
     }
     if R == S{
