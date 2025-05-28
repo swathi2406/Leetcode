@@ -4,6 +4,5 @@ class Solution:
         for i in range(len(nums)):
             if nums[i] in dict_index and abs(i - dict_index[nums[i]]) <=k:
                 return True
-            else:
-                dict_index[nums[i]] = i
+            dict_index[nums[i]] = i
         return False
