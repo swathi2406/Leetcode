@@ -1,12 +1,12 @@
 class Solution:
     def mergeAlternately(self, word1: str, word2: str) -> str:
-        word1_list = list(word1)
-        word2_list = list(word2)
-        j = 0
-        for i in range(len(word2)):
-            j+=1
-            word1_list.insert(i+j,word2[i])
+        length = min(len(word1),len(word2))
         res = ""
-        for i in word1_list:
-            res+=i
+        for i in range(length):
+            res +=word1[i]
+            res +=word2[i]
+
+        res +=word1[length:]
+        res +=word2[length:]    
+            
         return res
