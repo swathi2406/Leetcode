@@ -3,8 +3,7 @@ class Solution:
         length = min(len(word1),len(word2))
         res = ""
         for i in range(length):
-            res +=word1[i]
-            res +=word2[i]
+            res +=word1[i] + word2[i]
 
         if len(word1)> length:
             res +=word1[length:]
