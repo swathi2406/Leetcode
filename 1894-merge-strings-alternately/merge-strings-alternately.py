@@ -8,7 +8,7 @@ class Solution:
 
         if len(word1)> length:
             res +=word1[length:]
-        elif len(word2)>length:
+        else:
             res +=word2[length:]    
             
         return res
